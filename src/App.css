@@ -1,0 +1,38 @@
+
+
+
+.formInputContainer{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.formFieldContainer label {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.inputField{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 30%;
+    background-color: rgb(234, 234, 233);
+}
+
+button{
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+p{
+    color: red;
+}
