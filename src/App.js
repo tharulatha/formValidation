@@ -29,12 +29,12 @@ const App = () => {
     }
     if (!formValue.phone.trim()) {
       validateError.phone = "phone number is required";
-    } else if (!formValue.phone.length < 10) {
+    } else if (formValue.phone.length < 10) {
       validateError.phone = "phonenumber is should not less than 10 numbers";
     }
     if (!formValue.password.trim()) {
       validateError.password = "password is required";
-    } else if (!formValue.password.length < 6) {
+    } else if (formValue.password.length < 6) {
       validateError.password = "password is should not less than 6 characters";
     }
 
@@ -84,7 +84,7 @@ const App = () => {
             value={formValue.phone}
             onChange={handleChange}
           />
-          {formError.phone && <p>{formError.username}</p>}
+          {formError.phone && <p>{formError.phone}</p>}
         </div>
         <div className="formInputContainer">
           <label>Password</label>
@@ -96,7 +96,7 @@ const App = () => {
             value={formValue.password}
             onChange={handleChange}
           />
-          {formError.password && <p>{formError.username}</p>}
+          {formError.password && <p>{formError.password}</p>}
         </div>
         <button type="submit">Submit</button>
       </form>
